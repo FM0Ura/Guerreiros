@@ -1,0 +1,4 @@
+C:\Users\felip\OneDrive\Área de Trabalho\Guerreiros v2\obj\Debug\net8.0\Guerreiros v2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\OneDrive\Área de Trabalho\Guerreiros v2\obj\Debug\net8.0\Guerreiros v2.AssemblyInfoInputs.cache
+C:\Users\felip\OneDrive\Área de Trabalho\Guerreiros v2\obj\Debug\net8.0\Guerreiros v2.AssemblyInfo.cs
+C:\Users\felip\OneDrive\Área de Trabalho\Guerreiros v2\obj\Debug\net8.0\Guerreiros v2.csproj.CoreCompileInputs.cache
