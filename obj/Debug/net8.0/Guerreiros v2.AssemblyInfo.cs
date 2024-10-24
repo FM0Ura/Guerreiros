@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Guerreiros v2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+321bcac7505b44b883290a175f73237afb51131f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851adf98ec50cc829954c93f25ec9048282d23d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Guerreiros v2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Guerreiros v2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

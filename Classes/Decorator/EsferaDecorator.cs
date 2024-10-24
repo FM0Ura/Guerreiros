@@ -2,6 +2,6 @@ namespace Guerreiros
 {
     abstract class EsferaDecorator
     {
-        public abstract void aumentarPoderAnel();
+        public abstract void aumentarPoderAnel(AnelDecorator anel);
     }
 }
