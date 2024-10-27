@@ -14,15 +14,20 @@ namespace Guerreiros
         {
             float dano = this.ATK - ((int) guerreiro.DEF * 0.25f);
             
-            if(guerreiro.REFLEC != 0 && guerreiro.REFLEC > 0){
-                float danoRefletido = (float)(dano - (dano - guerreiro.REFLEC));
-                this.HP -= danoRefletido;
-                Console.WriteLine($"Atacando, causando dano de {dano}. Inimigo com {guerreiro.HP} de vida, a armadura reduzio o ataque em {this.ATK - dano}");
-                Console.WriteLine($"O oponente refletiu {danoRefletido} de dano, você está agora com {this.HP} de vida");
-            }
+            if(guerreiro.REFLEC != 0.0f){
+                float danoAlvo = dano - guerreiro.REFLEC;
+                float danoAtacante = guerreiro.REFLEC;
 
-            Console.WriteLine($"Atacando, causando dano de {dano}. Inimigo com {guerreiro.HP} de vida, a armadura reduzio o ataque em {this.ATK - dano}");
-            
+                this.HP -= danoAtacante;
+                guerreiro.HP -= danoAlvo;
+                
+                Console.WriteLine($"Atacando, causando dano de {danoAlvo}. Inimigo com {guerreiro.HP} de vida, a armadura reduzio o ataque em {guerreiro.DEF * 0.25f}");
+                Console.WriteLine($"O Alvo possui anel, {danoAtacante} foram refletidos para você. Você está com {this.HP}.");
+            } else
+            {
+                guerreiro.HP -= dano;
+                Console.WriteLine($"Atacando, causando dano de {dano}. Inimigo com {guerreiro.HP} de vida, a armadura reduzio o ataque em {this.ATK - dano}");
+            }
         }
 
         public void equiparArmadura(ArmaduraDecorator armadura)

@@ -6,22 +6,23 @@ class Program
     static void Main(string[] args)
     {
         /** Instanciando armas **/
-        Guerreiros.ArmaduraFerro armaduraFerro = new Guerreiros.ArmaduraFerro();
-        Guerreiros.ArmaduraAngelical armaduraAngelical = new Guerreiros.ArmaduraAngelical();
-        Guerreiros.EspadaFerro espadaFerro = new Guerreiros.EspadaFerro();
-        Guerreiros.EspadaFlamejante espadaFlamejante = new Guerreiros.EspadaFlamejante();
-        Guerreiros.AnelDaAlma anelDaAlma = new Guerreiros.AnelDaAlma();
+        ArmaduraFerro armaduraFerro = new ArmaduraFerro();
+        ArmaduraAngelical armaduraAngelical = new ArmaduraAngelical();
+        EspadaFerro espadaFerro = new EspadaFerro();
+        EspadaFlamejante espadaFlamejante = new EspadaFlamejante();
+        AnelDaAlma anelDaAlma = new AnelDaAlma();
+        EsferaDoDragao esferaDoDragao = new EsferaDoDragao();
 
 
-        Guerreiros.Guerreiro guerreiroImperial = new Guerreiros.Guerreiro();
+        Guerreiro guerreiroImperial = new Guerreiro();
         
         guerreiroImperial.equiparArma(espadaFerro);
         guerreiroImperial.equiparArmadura(armaduraFerro);
         guerreiroImperial.equiparAnel(anelDaAlma);
-        anelDaAlma.
+        esferaDoDragao.aumentarPoderAnel(anelDaAlma);
 
 
-        Guerreiros.Guerreiro guerreiroNordico = new Guerreiros.Guerreiro();
+        Guerreiro guerreiroNordico = new Guerreiro();
         
         guerreiroNordico.equiparArma(espadaFlamejante);
         guerreiroNordico.equiparArmadura(armaduraAngelical);
