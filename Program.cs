@@ -13,7 +13,6 @@ class Program
         AnelDaAlma anelDaAlma = new AnelDaAlma();
         EsferaDoDragao esferaDoDragao = new EsferaDoDragao();
 
-
         Guerreiro guerreiroImperial = new Guerreiro();
         
         guerreiroImperial.equiparArma(espadaFerro);
@@ -21,11 +20,12 @@ class Program
         guerreiroImperial.equiparAnel(anelDaAlma);
         esferaDoDragao.aumentarPoderAnel(anelDaAlma);
 
-
         Guerreiro guerreiroNordico = new Guerreiro();
         
         guerreiroNordico.equiparArma(espadaFlamejante);
         guerreiroNordico.equiparArmadura(armaduraAngelical);
+        
+        // Atacando
         guerreiroImperial.Atacar(guerreiroNordico);
         guerreiroNordico.Atacar(guerreiroImperial);
     }
